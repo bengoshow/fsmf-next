@@ -1,0 +1,22 @@
+footer {
+  .c-section__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  p {
+    margin-top: 0;
+  }
+  a {
+    color: $white;
+  }
+}
+#social-media-icons {
+  li {
+    @include font-size(30);
+    margin: 0 5px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
