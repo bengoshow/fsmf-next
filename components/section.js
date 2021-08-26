@@ -1,3 +1,9 @@
-export default function Section({ children }) {
-  return <section className="c-section">{children}</section>;
+import styles from '../styles/Main.module.scss';
+
+export default function Section({ id, children }) {
+  return (
+    <section id={id} className={styles.section}>
+      {children}
+    </section>
+  );
 }

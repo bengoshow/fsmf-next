@@ -1,13 +1,20 @@
-import PostPreview from '../components/post-preview';
+import Container from '../components/container';
+import Content from '../components/content';
+import Card from '../components/card';
+import styles from '../styles/Main.module.scss';
 
 export default function ArtistGrid({ posts }) {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-        {posts.map((post) => (
-          <PostPreview key={post.slug} title={post.title} coverImage={post.coverImage} slug={post.slug} excerpt={post.excerpt} />
-        ))}
-      </div>
+      <Container>
+        <Content>
+          <div className={styles.artist_grid}>
+            {posts.map((post) => (
+              <Card key={post.slug} title={post.title} coverImage={post.coverImage} slug={post.slug} excerpt={post.excerpt} />
+            ))}
+          </div>
+        </Content>
+      </Container>
     </section>
   );
 }

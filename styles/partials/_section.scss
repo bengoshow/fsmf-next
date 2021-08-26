@@ -1,13 +1,13 @@
-.c-section {
-  &.-light {
+.section {
+  &_light {
     background-color: $gray-light;
   }
-  &.-dark {
+  &_dark {
     background-color: $gray-dark;
     color: $white;
   }
 }
-.c-section__container {
+.section__container {
   margin: 0 auto;
   @media (min-width: $screen-sm) {
     width: $screen-sm - $grid-gutter;
@@ -22,7 +22,7 @@
     width: $screen-xl - $grid-gutter;
   }
 }
-.c-section__content {
+.section__content {
   padding-top: 20px;
   padding-bottom: 20px;
   @media (min-width: $screen-md) {

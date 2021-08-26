@@ -1,5 +1,6 @@
-footer {
-  .c-section__content {
+.footer {
+  @extend .section_dark;
+  .section__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -11,7 +12,10 @@ footer {
     color: $white;
   }
 }
-#social-media-icons {
+
+.social_media_icons {
+  @extend .list;
+  @extend .list_inline;
   li {
     @include font-size(30);
     margin: 0 5px;
