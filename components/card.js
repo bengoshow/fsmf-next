@@ -8,7 +8,7 @@ export default function PostPreview({ title, coverImage, date, excerpt, author, 
     <div className={styles.card}>
       <Link as={`/posts/${slug}`} href="/posts/[slug]">
         <a className={styles.card_link}>
-          <img slug={slug} title={title} src={coverImage} height={278} width={556} />
+          <img alt={title} src={coverImage} height={278} width={556} />
         </a>
       </Link>
       <div className={styles.card__content}>
