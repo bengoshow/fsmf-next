@@ -1,5 +1,4 @@
 import Header from '../components/header';
-import Section from '../components/section';
 import Container from '../components/container';
 import ArtistGrid from '../components/artist-grid';
 import Layout from '../components/layout';
@@ -14,7 +13,7 @@ export default function Index({ allArtists }) {
         <Head>
           <title>FSMF Returns</title>
         </Head>
-        <Header title="FSMF Returns" coverImage="/hero.webp" />
+        <Header title="FSMF Returns" coverImage="/hero.jpg" />
         <div className={styles.section}>
           <Container>{allArtists.length > 0 && <ArtistGrid posts={allArtists} />}</Container>
         </div>
