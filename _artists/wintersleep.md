@@ -1,6 +1,6 @@
 ---
 title: 'Wintersleep'
-coverImage: '/assets/artists/band1.webp'
+coverImage: '/assets/artists/band1.jpg'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
   url: '/assets/artists/band1.jpg'

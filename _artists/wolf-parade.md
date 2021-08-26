@@ -1,6 +1,6 @@
 ---
 title: 'Wolf Parade'
-coverImage: '/assets/artists/band5.webp'
+coverImage: '/assets/artists/band5.jpg'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
   url: '/assets/artists/band5.jpg'

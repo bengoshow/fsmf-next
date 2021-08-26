@@ -1,6 +1,6 @@
 ---
 title: 'The Decemberists'
-coverImage: '/assets/artists/band4.webp'
+coverImage: '/assets/artists/band4.jpg'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
   url: '/assets/artists/band4.jpg'

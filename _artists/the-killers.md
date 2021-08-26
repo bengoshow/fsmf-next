@@ -1,6 +1,6 @@
 ---
 title: 'The Killers'
-coverImage: '/assets/artists/band3.webp'
+coverImage: '/assets/artists/band3.jpg'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
   url: '/assets/artists/band3.jpg'
