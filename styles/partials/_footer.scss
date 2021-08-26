@@ -3,7 +3,14 @@
   .section__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: $screen-md) {
+      align-items: flex-start;
+      flex-direction: row;
+      text-align: unset;
+    }
   }
   p {
     margin-top: 0;
@@ -16,6 +23,9 @@
 .social_media_icons {
   @extend .list;
   @extend .list_inline;
+  @media screen and (max-width: $screen-sm-max) {
+    margin-top: $grid-gutter;
+  }
   li {
     @include font-size(30);
     margin: 0 5px;

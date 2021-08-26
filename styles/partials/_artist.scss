@@ -1,16 +1,22 @@
 .artist_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: ($grid-gutter);
+  @media screen and (min-width: $screen-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: ($grid-gutter);
+  }
 }
 .card {
+  margin-bottom: $grid-gutter;
   border-radius: $border-radius;
   box-shadow: $gray-light 3px 3px;
   transition: all ease-in 150ms;
-  &:hover,
-  &:focus {
-    transform: scale(1.03);
-    box-shadow: $gray-light 5px 5px;
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 0;
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+      box-shadow: $gray-light 5px 5px;
+    }
   }
 }
 .card__icon {

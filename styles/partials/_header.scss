@@ -17,9 +17,12 @@
 }
 .hero__title {
   @include vc;
-  @include font-size(120);
+  @include font-size(60);
   color: $white;
   text-align: center;
   z-index: 5;
   margin: 0;
+  @media screen and (min-width: $screen-md) {
+    @include font-size(120);
+  }
 }

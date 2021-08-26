@@ -1,14 +1,15 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Container from '../../components/container';
+import Content from '../../components/content';
 import PostBody from '../../components/post-body';
-import PostHeader from '../../components/post-header';
 import Layout from '../../components/layout';
 import { getPostBySlug, getAllArtists } from '../../lib/api';
 import PostTitle from '../../components/post-title';
 import Head from 'next/head';
 import { SITE_NAME } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
+import CoverImage from '../../components/cover-image';
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -22,15 +23,18 @@ export default function Post({ post, morePosts, preview }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article>
               <Head>
                 <title>
                   {post.title} | {SITE_NAME}
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <PostHeader title={post.title} coverImage={post.coverImage} />
-              <PostBody content={post.content} />
+              <CoverImage title={post.title} src={post.coverImage} height={620} width={1240} />
+              <Content>
+                <PostTitle>{post.title}</PostTitle>
+                <PostBody content={post.content} />
+              </Content>
             </article>
           </>
         )}
