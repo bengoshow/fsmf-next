@@ -10,10 +10,11 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Section>
+      <div className={styles.section}>
         <Container>
           <div className={styles.section__content}>
             <div className={styles.section__content_item}>
+              <h3 className={styles.footer_title}>FSMF Returns</h3>
               <p>Copyright &copy; 2021 {SITE_NAME}</p>
             </div>
             <div className={styles.section__content_item}>
@@ -56,7 +57,7 @@ export default function Footer() {
             </div>
           </div>
         </Container>
-      </Section>
+      </div>
     </footer>
   );
 }
