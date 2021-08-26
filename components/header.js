@@ -1,12 +1,10 @@
-import Link from 'next/link'
+import CoverImage from '../components/cover-image';
 
-export default function Header() {
+export default function Header({ title, coverImage }) {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/">
-        <a className="hover:underline">Blog</a>
-      </Link>
-      .
-    </h2>
-  )
+    <div id="homepage-hero" className="c-hero -tall">
+      <CoverImage title={title} src={coverImage} height={900} width={1600} />
+      <h1 className="c-hero__title">FSMF Returns!</h1>
+    </div>
+  );
 }

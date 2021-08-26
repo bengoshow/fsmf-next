@@ -1,9 +1,9 @@
 ---
-title: 'Wintersleep'
-coverImage: '/assets/artists/band1.webp'
+title: 'The Killers'
+coverImage: '/assets/artists/band3.webp'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
-  url: '/assets/artists/band1.jpg'
+  url: '/assets/artists/band3.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

@@ -1,30 +1,48 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Container from './container';
+import Section from './section';
+import { SITE_NAME } from '../lib/constants';
 
 export default function Footer() {
   return (
     <footer className="bg-accent-1 border-t border-accent-2">
-      <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <a
-              href="https://nextjs.org/docs/basic-features/pages"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-              className="mx-3 font-bold hover:underline"
-            >
-              View on GitHub
-            </a>
+      <Section>
+        <Container>
+          <div className="c-section__content">
+            <div className="c-section__content-item">
+              <p>Copyright &copy; 2021 {SITE_NAME}</p>
+            </div>
+            <div className="c-section__content-item">
+              <ul className="c-list">
+                <li className="c-list__item">
+                  <a href="mailto:info@fsfm.music">info@fsmf.music</a>
+                </li>
+                <li className="c-list__item">
+                  <a href="tel:317.555.1234">317.555.1234</a>
+                </li>
+              </ul>
+            </div>
+            <div className="c-section__content-item">
+              <ul id="social-media-icons" className="c-list -inline">
+                <li className="c-list__item">
+                  <a href="https://facebook.com" className="fab fa-facebook-square">
+                    <span className="sr-only">Facebook</span>
+                  </a>
+                </li>
+                <li className="c-list__item">
+                  <a href="https://twitter.com" className="fab fa-twitter">
+                    <span className="sr-only">Twitter</span>
+                  </a>
+                </li>
+                <li className="c-list__item">
+                  <a href="https://instagram.com" className="fab fa-instagram">
+                    <span className="sr-only">Instagram</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </Section>
     </footer>
-  )
+  );
 }
