@@ -1,5 +1,5 @@
 ---
-title: 'Hello Rosetta!'
+title: 'Hey Rosetta!'
 coverImage: '/assets/artists/band2.jpg'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
 ogImage:
